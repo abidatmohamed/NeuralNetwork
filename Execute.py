@@ -47,7 +47,7 @@ network = [[{'weights': [3.258878294629293, -0.45130843364828765, -0.95004605000
 print("N1\t\t", "N2\t\t", "Classe")
 for row in dataset:
     prediction = predict(network, row)
-    if prediction == 0:
+    if prediction == 1:
         pred = "clou"
     else:
         pred = "vis"
