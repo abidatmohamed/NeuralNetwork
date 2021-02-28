@@ -1,7 +1,4 @@
 from math import exp
-from random import seed
-from random import random
-
 
 # Calculate neuron activation for an input
 def activate(weights, inputs):
@@ -74,7 +71,6 @@ def train_network(network, train, l_rate, n_epoch, n_outputs):
 		print('>epoch=%d, lrate=%.3f, error=%.3f' % (epoch, l_rate, sum_error))
 
 # Test training backprop algorithm
-seed(1)
 dataset = [[0.6,0.1,1],
 	[0.2,0.3,0],
 	[0.4,0.4,0],
